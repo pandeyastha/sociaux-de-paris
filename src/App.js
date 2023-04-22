@@ -11,12 +11,12 @@ import {Navbar } from "./components/navbar"
 
 function App() {
   return (
-    <div className="App">
-      <Header title={"Sociaux-de-Paris!"}/>
-       <Router>
-        <Navbar />
-          <Routes>
-            <Route path="/" element={<Main />} />
+    <div className="App">                                                                      
+      <Header title={"Sociaux-de-Paris!"}/>                                   //Header component added
+       <Router> 
+        <Navbar />                                                        //navbar inside main router 
+          <Routes>                                                                    //3 routes -> home,create post,login
+            <Route path="/" element={<Main />} />                       
             <Route path="/login" element={<Login />} />
             <Route path="/createpost" element={<CreatePost />} />
           </Routes>
